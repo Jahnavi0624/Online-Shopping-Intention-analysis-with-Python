@@ -1,0 +1,11 @@
+import numpy as np # linear algebra
+import pandas as pd # data processing
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly as py
+import plotly.graph_objs as go
+# read the dataset
+data = pd.read_csv('online_shoppers_intention.csv')
+#missing values filled using the fillna method in Python pandas
+missing = data.isnull().sum()
+print(missing)
